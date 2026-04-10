@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  color: #202020;
+  background:
+    linear-gradient(180deg, #f4f4f1 0%, #eceae3 100%);
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.panel-surface {
+  @apply rounded-[18px] border-[3px] border-black bg-[#fffdf7] shadow-none;
+  box-shadow: 3px 3px 0 #000;
+}
+
+.wire-btn {
+  @apply inline-flex items-center gap-2 rounded-[14px] border-[3px] border-black bg-[#fffdf7] px-3 py-2 text-[19px] text-black shadow-none transition;
+  box-shadow: 2px 2px 0 #000;
+}
+
+.wire-btn:hover {
+  background: #fff6cf;
+}
+
+.wire-btn:disabled {
+  opacity: 0.45;
+}
+
+.wire-btn-active {
+  @apply bg-[#ffe56f];
+}
+
+.wire-input {
+  @apply rounded-[14px] border-[3px] border-black bg-white px-3 py-2 text-[18px] text-black outline-none;
+}
+
+.wire-card {
+  @apply rounded-[16px] border-[3px] border-black bg-[#fffdf7];
+  box-shadow: 2px 2px 0 #000;
+}
+
+.scrollbar-thin {
+  scrollbar-width: thin;
+  scrollbar-color: #000 #e7e3d8;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 9999px;
+}
