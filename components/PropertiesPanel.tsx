@@ -122,9 +122,8 @@ export function PropertiesPanel({
                   key={layer.id}
                   type="button"
                   onClick={() => onSelectLayer(layer.id)}
-                  className={`wire-card flex w-full items-center justify-between px-2 py-1.5 text-left text-sm ${
-                    selectedObjectId === layer.id ? "bg-[#ffe56f]" : ""
-                  }`}
+                  className={`wire-card flex w-full items-center justify-between px-2 py-1.5 text-left text-sm ${selectedObjectId === layer.id ? "bg-[#ffe56f]" : ""
+                    }`}
                 >
                   <span className="truncate">{layer.name}</span>
                   <span className="rounded-full border-[2px] border-black bg-[#f1ede0] px-1.5 py-0.5 text-[10px] text-black">{layer.objectType}</span>
